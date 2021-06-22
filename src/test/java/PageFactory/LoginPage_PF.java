@@ -34,8 +34,16 @@ public class LoginPage_PF {
 	
 	public void selectloginoption()
 	{
-		opt_Myaccount.click();
-		opt_Login.click();
+		try{
+			opt_Myaccount.click();
+			opt_Login.click();
+		}
+		catch(Exception e)
+		{
+			System.out.println("exception occurred");
+		}
+				
+		
 	}
 
 	public void enterusernameandpassword(String username,String password){
